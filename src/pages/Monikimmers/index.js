@@ -1,1 +1,1 @@
-export { default } from './Monikimmers';
+export { default } from './MonikimmersContainer';

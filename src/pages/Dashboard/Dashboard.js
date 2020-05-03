@@ -7,7 +7,7 @@ const Dashboard = () => {
   const games = [ { title: 'Monikimmers' }, { title: 'Wavelength' }]; // will come from API
   return (
     <Grid>
-      <Typography variant="h2" align="center">The Contagions</Typography>
+      <Typography variant="h1" align="center">The Contagions</Typography>
       <Grid container justify="center">
         {games.map(game => (
           <GameCard title={game.title} key={game.title} />

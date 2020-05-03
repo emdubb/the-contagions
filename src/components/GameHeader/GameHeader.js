@@ -13,13 +13,14 @@ const StyledHelpIcon = styled(HelpIcon)(() => ({
   margin: 20,
 }));
 
-
 const GameHeader = ({ title }) => {
   const history = useHistory();
   return (
     <Grid container justify="space-between">
       <StyledAppsIcon onClick={() => history.push('/')} />
-      <Typography variant="h3" align="center">{title}</Typography>
+      <Typography variant="h3" align="center">
+        {title}
+      </Typography>
       <StyledHelpIcon />
     </Grid>
   );

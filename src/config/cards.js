@@ -9,7 +9,8 @@ const cards = [
   {
     id: 2,
     title: 'Slippery Otten',
-    description: '2 parts tequila, 1 part lime juice, 1/4 part simple syrup, 3 parts ginger beer and 1 part regret.',
+    description:
+      '2 parts tequila, 1 part lime juice, 1/4 part simple syrup, 3 parts ginger beer and 1 part regret.',
     category: 'Historic Item',
     points: 1,
   },

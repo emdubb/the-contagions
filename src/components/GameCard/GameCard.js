@@ -16,12 +16,10 @@ export const GameCard = ({ title }) => {
   const history = useHistory();
   return (
     <StyledCard variant="outlined" onClick={() => history.push(`/${title}`)}>
-      <Typography align="center">
-        {title}
-      </Typography>
+      <Typography align="center">{title}</Typography>
     </StyledCard>
   );
-}
+};
 
 GameCard.propTypes = {
   title: PropTypes.string,

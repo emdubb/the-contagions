@@ -38,30 +38,28 @@ const Dots = styled('div')(() => ({
   margin: '0 auto',
 }));
 
-export const GameCard = ({ card }) => {
-  return (
-    <StyledCard variant="outlined">
-      <Grid container justify="center" direction="column"> 
-        <TitleTypography align="center" variant="h5">
-          {card.title}
-        </TitleTypography>
-        <DescriptionTypography align="center">
-          {card.description}
-        </DescriptionTypography>
-        <Dots/>
-        <CategoryTypography align="center">
-          {card.category}
-        </CategoryTypography>
-        <Typography align="center">
-          {card.points}
-        </Typography>
-      </Grid>
-    </StyledCard>
-  );
-}
+// #80c268	GREEN	CELEBRITIES
+// #8f6eb3	PURPLE	HISTORICAL FIGURES
+// #ea5e3a	RED/ORANGE	ET CETERA
+// #37c6fe	BLUE	FICTIONAL CHARACTERS
+export const MonikimmerCard = ({ card }) => (
+  <StyledCard variant="outlined">
+    <Grid container justify="center" direction="column" alignItems="end">
+      <TitleTypography align="center" variant="h5">
+        {card.title}
+      </TitleTypography>
+      <DescriptionTypography align="center">
+        {card.description}
+      </DescriptionTypography>
+      <Dots />
+      <CategoryTypography align="center">{card.category}</CategoryTypography>
+      <Typography align="center">{card.points}</Typography>
+    </Grid>
+  </StyledCard>
+);
 
-GameCard.propTypes = {
+MonikimmerCard.propTypes = {
   card: PropTypes.object,
 };
 
-export default GameCard;
+export default MonikimmerCard;

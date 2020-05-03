@@ -15,7 +15,10 @@ const StyledCard = styled(Card)(() => ({
 export const GameCard = ({ title }) => {
   const history = useHistory();
   return (
-    <StyledCard variant="outlined" onClick={() => history.push(`/${title}`)}>
+    <StyledCard
+      variant="outlined"
+      onClick={() => history.push(`/${title}/players`)}
+    >
       <Typography align="center">{title}</Typography>
     </StyledCard>
   );
